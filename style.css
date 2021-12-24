@@ -1,0 +1,137 @@
+:root {
+  /* ### Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* ### Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  
+}
+/* control Text-header */
+.container{
+  margin-top: 4rem;
+  margin-bottom: 4.5rem;
+  width: 45%;
+  text-align: center;
+}
+/* Title Website */
+.container .title{
+  color: var(--Grayish-Blue);
+  font-size: 2rem;
+}
+.container .title span{
+  color: black;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* Subtitle Website */
+.container p{
+  color: var(--Grayish-Blue);
+  font-size: 12px;
+}
+/* control Box-content */
+.content{
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+/* Box-content */
+.content .box{
+  width: 320px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  margin: 1.2rem;
+}
+/* Title-box */
+.content .box .title-box{
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+/* Subtitle-box */
+.content .box .subtitle-box{
+  font-size: 0.8rem;
+  color: var(--Grayish-Blue);
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+/* border-top Content */
+.content .box1{
+  border-top: 5px solid var(--Cyan);
+}
+.content .box2{
+  border-top: 5px solid var(--Red);
+}
+.content .box3{
+  border-top: 5px solid var(--Orange);
+}
+.content .box4{
+  border-top: 5px solid var(--Blue);
+}
+
+/* Content Images */
+.content .box img{
+  margin-top: 3rem;
+  float: right;
+  margin-right: 1rem; 
+}
+
+/* Media quries */
+@media (max-width: 1440px){
+
+  .container{
+    width: 38%;
+  }
+  .content{
+    margin-top: 1.5px;
+  }
+
+}
+@media (max-width: 375px){
+  .container{
+    width: 100%;
+  }
+
+  .container .title{
+    font-size: 1.5rem;
+  }
+  .container .title span{
+    font-size: 1.5rem;
+  }
+  .container p{
+    margin: 0 2rem;
+  }
+  .content{
+    display: grid;
+  }
+}
